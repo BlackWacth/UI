@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UI</string>
+
+    <string name="lsn3">LSN-3-Paint-Gradient</string>
+    <string name="linear_gradient">LinearGradient</string>
+    <string name="sweep_gradient">SweepGradient</string>
+    <string name="radial_gradient">RadialGradient</string>
+    <string name="bitmap_shader">BitmapShader</string>
+    <string name="compose_shader">ComposeShader</string>
+    <string name="linear_gradient_text">x0表示渲染起始位置的x坐标，y0表示渲染起始位置的y坐标，x1表示渲染结束位置的x坐标，y1表示渲染结束位置的y坐标，colors表示渲染的颜色，它是一个颜色数组，数组长度必须大于等于2，positions表示colors数组中几个颜色的相对位置，是一个float类型的数组，该数组的长度必须与colors数组的长度相同。如果这个参数使用null也可以，这时系统会按照梯度线来均匀分配colors数组中的颜色，最后一个参数则表示平铺方式，有三种</string>
+
+</resources>
