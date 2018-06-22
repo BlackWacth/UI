@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".lsn4.Lsn4HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,14 +12,9 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_lsn3"
+            android:id="@+id/btn_color_filter"
             style="@style/BaseBtn"
-            android:text="@string/lsn3"/>
-
-        <Button
-            android:id="@+id/btn_lsn4"
-            style="@style/BaseBtn"
-            android:text="@string/lsn4"/>
+            android:text="@string/color_filter"/>
 
     </LinearLayout>
 

@@ -15,7 +15,6 @@ import android.view.View;
 public class RadialGradientView extends View {
     private Paint mPaint;
     int cx = 500, cy = 500;
-    private RadialGradient mRadialGradient;
     private Matrix mMatrix;
 
     public RadialGradientView(Context context) {
@@ -36,9 +35,9 @@ public class RadialGradientView extends View {
     private void init() {
         mPaint = new Paint();
         mMatrix = new Matrix();
-        mRadialGradient = new RadialGradient(cx, cy, 100, new int[]{Color.YELLOW, Color.GREEN, Color.TRANSPARENT, Color.RED}, null, Shader.TileMode.REPEAT);
-        mRadialGradient.setLocalMatrix(mMatrix);
-        mPaint.setShader(mRadialGradient);
+        RadialGradient radialGradient = new RadialGradient(cx, cy, 100, new int[]{Color.YELLOW, Color.GREEN, Color.TRANSPARENT, Color.RED}, null, Shader.TileMode.REPEAT);
+        radialGradient.setLocalMatrix(mMatrix);
+        mPaint.setShader(radialGradient);
 
     }
 

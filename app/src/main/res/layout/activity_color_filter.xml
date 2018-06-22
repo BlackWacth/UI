@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lsn4.filter.ColorFilterActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xyjy2"/>
+
+        <com.bruce.ui.lsn4.filter.FilterView
+            android:id="@+id/fv_filter_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_negative_effect"
+        style="@style/BaseBtn"
+        android:text="@string/negative_effect"/>
+
+    <Button
+        android:id="@+id/btn_color_enhanced"
+        style="@style/BaseBtn"
+        android:text="@string/color_enhanced"/>
+
+    <Button
+        android:id="@+id/btn_black_white_photo"
+        style="@style/BaseBtn"
+        android:text="@string/black_white_photo"/>
+
+    <Button
+        android:id="@+id/btn_retro_effect"
+        style="@style/BaseBtn"
+        android:text="@string/retro_effect"/>
+
+</LinearLayout>

@@ -28,6 +28,10 @@
         </activity>
         <activity android:name=".lsn3.RadialGradientActivity">
         </activity>
+        <activity android:name=".lsn4.Lsn4HomeActivity">
+        </activity>
+        <activity android:name=".lsn4.filter.ColorFilterActivity">
+        </activity>
     </application>
 
 </manifest>
