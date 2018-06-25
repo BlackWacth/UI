@@ -17,5 +17,7 @@
     <string name="black_white_photo">黑白照片</string>
     <string name="retro_effect">复古效果</string>
 
+    <string name="xfermode">Xfermode</string>
+
 
 </resources>

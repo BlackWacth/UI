@@ -16,6 +16,11 @@
             style="@style/BaseBtn"
             android:text="@string/color_filter"/>
 
+        <Button
+            android:id="@+id/btn_xfermode"
+            style="@style/BaseBtn"
+            android:text="@string/xfermode"/>
+
     </LinearLayout>
 
 </ScrollView>

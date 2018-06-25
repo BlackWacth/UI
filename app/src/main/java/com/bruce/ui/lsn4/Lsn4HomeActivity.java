@@ -6,6 +6,7 @@ import android.view.View;
 import com.bruce.ui.BaseActivity;
 import com.bruce.ui.R;
 import com.bruce.ui.lsn4.filter.ColorFilterActivity;
+import com.bruce.ui.lsn4.xermode.XfermodeActivity;
 
 public class Lsn4HomeActivity extends BaseActivity {
 
@@ -19,6 +20,10 @@ public class Lsn4HomeActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.btn_color_filter:
                 startActivity(ColorFilterActivity.class);
+                break;
+
+            case R.id.btn_xfermode:
+                startActivity(XfermodeActivity.class);
                 break;
         }
     }

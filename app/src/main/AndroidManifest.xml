@@ -32,6 +32,8 @@
         </activity>
         <activity android:name=".lsn4.filter.ColorFilterActivity">
         </activity>
+        <activity android:name=".lsn4.xermode.XfermodeActivity">
+        </activity>
     </application>
 
 </manifest>
