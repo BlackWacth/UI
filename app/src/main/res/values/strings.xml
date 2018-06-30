@@ -19,5 +19,10 @@
 
     <string name="xfermode">Xfermode</string>
 
+    <string name="lsn6">LSN-6-Drawable</string>
+
+    <string name="lsn7">LSN-7-Bezier</string>
+    <string name="lsn7_drag_bubble">DragBubble</string>
+    <string name="lsn7_draw_Bezier">DrawBezier</string>
 
 </resources>

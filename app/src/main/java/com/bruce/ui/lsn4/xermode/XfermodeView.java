@@ -9,6 +9,7 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Xfermode;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class XfermodeView extends View {
@@ -53,6 +54,9 @@ public class XfermodeView extends View {
     private int mWidth = 0;
     private float mItemX;
     private float mItemY;
+    private int mHeight;
+
+    private String mTitle;
 
     public XfermodeView(Context context) {
         super(context);
@@ -87,16 +91,9 @@ public class XfermodeView extends View {
         mItemY = mSpace;
         mCircleRadius = (mItemSize - mPadding * 2) / 3f;
         mRectSize = (mItemSize - mPadding * 2) * 2f / 3f;
-        int height = (int) (mRow * (mItemSize + mSpace) + mSpace);
-
-        setMeasuredDimension(mWidth, height);
-    }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-
-
+        mHeight = (int) (mRow * (mItemSize + mSpace) + mSpace);
+        Log.i("hzw", "mHeight = " + mHeight);
+        setMeasuredDimension(mWidth, mHeight * 2);
     }
 
     @Override
@@ -104,50 +101,57 @@ public class XfermodeView extends View {
         super.onDraw(canvas);
         canvas.drawColor(Color.parseColor("#a5d6a7"));
 
-//        int width = canvas.getWidth();
-//        int height = canvas.getHeight();
-//        for (int row = 0; row < mRow; row++) {
-//            for (int column = 0; column < mColumn; column++) {
-//                int layer = canvas.saveLayer(0, 0, width, height, null);
-//                mPaint.setXfermode(null);
-//                int index = row * mColumn + column;
-//                float translateX = (mItemSize + mSpace) * column + mSpace;
-//                float translateY = (mItemSize + mSpace) * row + mSpace;
-//                canvas.translate(translateX, translateY);
-//
-//                //绘制大边框
-//                mPaint.setColor(Color.BLACK);
-//                mPaint.setStyle(Paint.Style.STROKE);
-//                canvas.drawRect(0, 0, mItemSize, mItemSize, mPaint);
-//
-//                //绘制文字
-//                String text = index + " " + sLabels[index];
-//                mPaint.setColor(Color.BLACK);
-//                mPaint.setStyle(Paint.Style.FILL);
-//                float textXOffset = (mItemSize - mPaint.measureText(text)) / 2f;
-//                float textYOffset = 30;
-//                canvas.drawText(text, textXOffset, textYOffset, mPaint);
-//                canvas.translate(mPadding, mItemSize - mCircleRadius * 3);
-//
-//                //绘制文字
-//                mPaint.setStyle(Paint.Style.FILL);
-//                mPaint.setColor(mCircleColor);
-//                float left = mCircleRadius;
-//                float top = mCircleRadius;
-//                canvas.drawCircle(left, top, mCircleRadius, mPaint);
-//
-//                //绘制文字
-//                mPaint.setXfermode(sModes[index]);
-//                mPaint.setColor(mRectColor);
-//                float right = mCircleRadius + mRectSize;
-//                float bottom = mCircleRadius + mRectSize;
-//                canvas.drawRect(left, top, right, bottom, mPaint);
-//                canvas.restoreToCount(layer);
-//            }
-//        }
+        mTitle = "saveLayer效果";
+        canvas.drawText(mTitle, (mWidth - mPaint.measureText(mTitle)) /2f, mSpace, mPaint);
 
         for (int row = 0; row < mRow; row++) {
-            mItemY = mSpace + row * (mItemSize + mSpace);
+            for (int column = 0; column < mColumn; column++) {
+                int layer = canvas.saveLayer(0, 0, mWidth, mHeight, null);
+                mPaint.setXfermode(null);
+                int index = row * mColumn + column;
+                float translateX = (mItemSize + mSpace) * column + mSpace;
+                float translateY = (mItemSize + mSpace) * row + mSpace;
+                canvas.translate(translateX, translateY);
+
+                //绘制大边框
+                mPaint.setColor(Color.BLACK);
+                mPaint.setStyle(Paint.Style.STROKE);
+                canvas.drawRect(0, 0, mItemSize, mItemSize, mPaint);
+
+                //绘制文字
+                String text = index + " " + sLabels[index];
+                mPaint.setColor(Color.BLACK);
+                mPaint.setStyle(Paint.Style.FILL);
+                float textXOffset = (mItemSize - mPaint.measureText(text)) / 2f;
+                float textYOffset = 30;
+                canvas.drawText(text, textXOffset, textYOffset, mPaint);
+                canvas.translate(mPadding, mItemSize - mCircleRadius * 3);
+
+                //绘制圆
+                mPaint.setStyle(Paint.Style.FILL);
+                mPaint.setColor(mCircleColor);
+                float left = mCircleRadius;
+                float top = mCircleRadius;
+                canvas.drawCircle(left, top, mCircleRadius, mPaint);
+
+                //绘制矩形
+                mPaint.setXfermode(sModes[index]);
+                mPaint.setColor(mRectColor);
+                float right = mCircleRadius + mRectSize;
+                float bottom = mCircleRadius + mRectSize;
+                canvas.drawRect(left, top, right, bottom, mPaint);
+                canvas.restoreToCount(layer);
+            }
+        }
+
+        mTitle = "没有saveLayer效果";
+        mPaint.setColor(Color.BLACK);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setXfermode(null);
+        canvas.drawText(mTitle, (mWidth - mPaint.measureText(mTitle)) /2f, mHeight, mPaint);
+
+        for (int row = 0; row < mRow; row++) {
+            mItemY = mHeight + mSpace + row * (mItemSize + mSpace);
             for (int column = 0; column < mColumn; column++) {
                 mItemX = mSpace + column * (mItemSize + mSpace);
                 int index = row * mColumn + column;

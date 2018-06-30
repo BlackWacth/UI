@@ -5,6 +5,8 @@ import android.view.View;
 
 import com.bruce.ui.lsn3.Lsn3HomeActivity;
 import com.bruce.ui.lsn4.Lsn4HomeActivity;
+import com.bruce.ui.lsn6.RevealEffectActivity;
+import com.bruce.ui.lsn7.Lsn7HomeActivity;
 
 public class MainActivity extends BaseActivity {
 
@@ -22,6 +24,14 @@ public class MainActivity extends BaseActivity {
 
             case R.id.btn_lsn4:
                 startActivity(Lsn4HomeActivity.class);
+                break;
+
+            case R.id.btn_lsn6:
+                startActivity(RevealEffectActivity.class);
+                break;
+
+            case R.id.btn_lsn7:
+                startActivity(Lsn7HomeActivity.class);
                 break;
         }
     }

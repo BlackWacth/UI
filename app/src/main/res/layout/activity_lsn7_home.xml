@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".lsn7.Lsn7HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,24 +12,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_lsn3"
+            android:id="@+id/btn_drag_bubble"
             style="@style/BaseBtn"
-            android:text="@string/lsn3"/>
+            android:text="@string/lsn7_drag_bubble"/>
 
         <Button
-            android:id="@+id/btn_lsn4"
+            android:id="@+id/btn_draw_bezier"
             style="@style/BaseBtn"
-            android:text="@string/lsn4"/>
-
-        <Button
-            android:id="@+id/btn_lsn6"
-            style="@style/BaseBtn"
-            android:text="@string/lsn6"/>
-
-        <Button
-            android:id="@+id/btn_lsn7"
-            style="@style/BaseBtn"
-            android:text="@string/lsn7"/>
+            android:text="@string/lsn7_draw_Bezier"/>
 
     </LinearLayout>
 
