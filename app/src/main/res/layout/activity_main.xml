@@ -32,6 +32,21 @@
             style="@style/BaseBtn"
             android:text="@string/lsn7"/>
 
+        <Button
+            android:id="@+id/btn_lsn11"
+            style="@style/BaseBtn"
+            android:text="@string/lsn11"/>
+
+        <Button
+            android:id="@+id/btn_lsn16"
+            style="@style/BaseBtn"
+            android:text="@string/lsn16"/>
+
+        <Button
+            android:id="@+id/btn_lsn17"
+            style="@style/BaseBtn"
+            android:text="@string/lsn17"/>
+
     </LinearLayout>
 
 </ScrollView>

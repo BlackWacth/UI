@@ -13,7 +13,10 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportActionBar().setTitle(this.getClass().getSimpleName());
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().setTitle(this.getClass().getSimpleName());
+//        }
+        setTitle(this.getClass().getSimpleName());
     }
 
     protected void startActivity(Class<?> cls) {

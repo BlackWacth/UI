@@ -42,6 +42,15 @@
         </activity>
         <activity android:name=".lsn7.drawBezier.DrawBezierActivity">
         </activity>
+        <activity android:name=".lsn11.Lsn11HomeActivity">
+        </activity>
+        <activity
+            android:name=".lsn16.Lsn16HomeActivity"
+            android:theme="@style/AppThemeNoActionBar">
+        </activity>
+        <activity android:name=".lsn17.Lsn17HomeActivity">
+        </activity>
+
     </application>
 
 </manifest>
