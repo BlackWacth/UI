@@ -50,7 +50,10 @@
         </activity>
         <activity android:name=".lsn17.Lsn17HomeActivity">
         </activity>
-
+        <activity android:name=".lsn12.Lsn12HomeActivity">
+        </activity>
+        <activity android:name=".lsn18.Lsn18HomeActivity">
+        </activity>
     </application>
 
 </manifest>

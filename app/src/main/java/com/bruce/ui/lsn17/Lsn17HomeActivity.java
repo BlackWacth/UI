@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewPropertyAnimator;
 import android.widget.Button;
 
 import com.bruce.ui.R;
@@ -29,6 +30,9 @@ public class Lsn17HomeActivity extends AppCompatActivity {
         });
 
 //        WindowBarManagerUtils.transparencyBar(this);
+
+        ViewPropertyAnimator viewPropertyAnimator = button.animate().scaleX(1);
+        viewPropertyAnimator.start();
     }
 
     private void applySelectedColor() {

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lsn18.Lsn18HomeActivity">
+
+    <com.bruce.ui.lsn18.widgets.MenuDrawerLayout
+        android:id="@+id/mdl_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fake"/>
+
+        <com.bruce.ui.lsn18.widgets.MenuContentLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/biubiu"
+            app:maxTranslationX="66dp">
+
+            <TextView
+                style="@style/MenuText"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/circle"
+                android:onClick="test"
+                android:text="朋友圈"
+                />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:onClick="test"
+                android:text="钱包"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券"/>
+
+        </com.bruce.ui.lsn18.widgets.MenuContentLayout>
+
+    </com.bruce.ui.lsn18.widgets.MenuDrawerLayout>
+
+</RelativeLayout>

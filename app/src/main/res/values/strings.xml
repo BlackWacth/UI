@@ -27,6 +27,7 @@
 
     <string name="lsn11">LSN-11-ItemTouchHelper</string>
 
+    <string name="lsn12">LSN-12-Animator</string>
 
     <string name="lsn16">LSN-16-NestedScrolling</string>
     <string name="lsn16_text">
@@ -125,5 +126,7 @@
     <string name="match_actionbar_example">Match Action Bar Example</string>
     <string name="color_example">Color Example</string>
     <string name="set">Set</string>
+
+    <string name="lsn18">LSN-18-Menu</string>
 
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lsn12.Lsn12HomeActivity">
+
+    <Button
+        android:id="@+id/btn_normal_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常动画-1S后休眠2S"
+        android:layout_marginTop="64dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_rt_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RT动画-1S后休眠2S"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/btn_normal_animator"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

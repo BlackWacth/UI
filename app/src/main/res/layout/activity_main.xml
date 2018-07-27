@@ -38,6 +38,11 @@
             android:text="@string/lsn11"/>
 
         <Button
+            android:id="@+id/btn_lsn12"
+            style="@style/BaseBtn"
+            android:text="@string/lsn12"/>
+
+        <Button
             android:id="@+id/btn_lsn16"
             style="@style/BaseBtn"
             android:text="@string/lsn16"/>
@@ -46,6 +51,11 @@
             android:id="@+id/btn_lsn17"
             style="@style/BaseBtn"
             android:text="@string/lsn17"/>
+
+        <Button
+            android:id="@+id/btn_lsn18"
+            style="@style/BaseBtn"
+            android:text="@string/lsn18"/>
 
     </LinearLayout>
 
