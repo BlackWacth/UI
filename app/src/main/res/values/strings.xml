@@ -129,4 +129,8 @@
 
     <string name="lsn18">LSN-18-Menu</string>
 
+    <string name="lsn19">LSN-19-custom-RecyclerView</string>
+
+    <string name="lsn20">LSN-20-QQHeader</string>
+
 </resources>
