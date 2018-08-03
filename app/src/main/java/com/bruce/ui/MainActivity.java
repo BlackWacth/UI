@@ -10,6 +10,7 @@ import com.bruce.ui.lsn17.Lsn17HomeActivity;
 import com.bruce.ui.lsn18.Lsn18HomeActivity;
 import com.bruce.ui.lsn19.Lsn19HomeActivity;
 import com.bruce.ui.lsn20.Lsn20HomeActivity;
+import com.bruce.ui.lsn21.Lsn21HomeActivity;
 import com.bruce.ui.lsn3.Lsn3HomeActivity;
 import com.bruce.ui.lsn4.Lsn4HomeActivity;
 import com.bruce.ui.lsn6.RevealEffectActivity;
@@ -67,6 +68,10 @@ public class MainActivity extends BaseActivity {
 
             case R.id.btn_lsn20:
                 startActivity(Lsn20HomeActivity.class);
+                break;
+
+            case R.id.btn_lsn21:
+                startActivity(Lsn21HomeActivity.class);
                 break;
         }
     }

@@ -9,4 +9,10 @@
         <attr name="maxTranslationX" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="MapView">
+
+        <attr name="mapSvg" format="string"/>
+
+    </declare-styleable>
+
 </resources>

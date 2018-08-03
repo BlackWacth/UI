@@ -58,6 +58,8 @@
         </activity>
         <activity android:name=".lsn20.Lsn20HomeActivity">
         </activity>
+        <activity android:name=".lsn21.Lsn21HomeActivity">
+        </activity>
     </application>
 
 </manifest>
