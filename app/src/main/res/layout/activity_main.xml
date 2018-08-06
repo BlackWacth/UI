@@ -72,6 +72,12 @@
             style="@style/BaseBtn"
             android:text="@string/lsn21"/>
 
+        <Button
+            android:id="@+id/btn_lsn22"
+            style="@style/BaseBtn"
+            android:text="@string/lsn22"/>
+
+
     </LinearLayout>
 
 </ScrollView>

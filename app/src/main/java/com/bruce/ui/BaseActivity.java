@@ -16,7 +16,7 @@ public class BaseActivity extends AppCompatActivity {
 //        if (getSupportActionBar() != null) {
 //            getSupportActionBar().setTitle(this.getClass().getSimpleName());
 //        }
-        setTitle(this.getClass().getSimpleName());
+//        setTitle(this.getClass().getSimpleName());
     }
 
     protected void startActivity(Class<?> cls) {

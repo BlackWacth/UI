@@ -6,4 +6,7 @@
 
     <color name="actionbar_bg">#FF0099CC</color>
     <color name="statusbar_bg">#FF006080</color>
+
+    <color name="colorWhiteBg">#ffffff</color>
+    <color name="colorGrayBg">#f4f4f4</color>
 </resources>

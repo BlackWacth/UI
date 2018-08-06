@@ -274,8 +274,6 @@ public class MRecyclerView extends ViewGroup {
         for (int i = 0; i < mViewList.size(); i++) {
             bottom = top + mHeights[mFirstRow + i];
             mViewList.get(i).layout(0, top, mWidth, bottom);
-            TextView textView = (TextView) mViewList.get(i);
-            Log.i(TAG, "repositionViews => text = " + textView.getText() + " top = " + textView.getTop() + ", size = " + mViewList.size() + " --  i = " + i);
             top = bottom;
         }
     }
